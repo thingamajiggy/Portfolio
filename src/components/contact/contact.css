@@ -1,0 +1,149 @@
+.c {
+    position: relative;
+}
+
+.c-bg {
+    width: 20px;
+    height: 100%;
+    background-color: #cbf1e4;
+    position: absolute;
+}
+
+.c-bg-r {
+    width: 20px;
+    height: 100%;
+    background-color: #cbf1e4;
+    position: absolute;
+    right: 0;
+}
+
+.c-wrapper {
+    padding: 50px;
+    display: flex;
+}
+
+.c-info {
+    width: 90%;
+}
+
+.c-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.c-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-title-left {
+    text-align: center;
+}
+
+.c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.c-info-item-title-right {
+    padding-right: 10px;
+}
+
+.c-info-item-title {
+    white-space: nowrap;
+    padding-right: 10px;
+    min-width: 120px;
+
+}
+
+.c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.c-desc {
+    font-weight: 200;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+button {
+    border: none;
+    padding: 15px;
+    background-color: #59b256;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .c {
+        margin-top: 30px;
+    }
+
+    .c-wrapper {
+        flex-direction: column;
+        padding: 0px 25px;
+    }
+
+    .c-title {
+        font-size: 30px;
+    }
+
+    .c-info-item {
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    .c-desc {
+        display: none;
+    }
+
+    form {
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input {
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    .c-info {
+        width: 100%;
+    }
+}

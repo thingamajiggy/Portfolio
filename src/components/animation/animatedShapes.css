@@ -1,0 +1,93 @@
+.a-square {
+    width: 60px;
+    height: 60px;
+    background-color: #4e6bff;
+    opacity: 0.7;
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    z-index: -1;
+    animation: square 10s linear alternate infinite;
+}
+
+.a-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.8;
+    background-color: #ff97af;
+    position: absolute;
+    top: 200px;
+    left: -100px;
+    z-index: -1;
+    animation: circle 10s linear alternate infinite;
+
+}
+
+.a-rect {
+ width: 50px;
+  height: 100px;
+  background-color: #669966;
+  opacity: 0.5;
+  position: absolute;
+  top: 400px;
+  left: -50px;
+  z-index: -1;
+  animation: rect 10s linear alternate infinite;
+}
+
+.a-heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+    opacity: 0.7;
+    z-index: -1;
+    animation: heart 10s linear alternate infinite;
+}
+  
+.a-heart::before, .a-heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: #EF476F;
+}
+  
+.a-heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+  
+.a-heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+@keyframes heart {
+    to{
+        transform: translate(100vw, 50vh) 
+    }
+}  
+
+@keyframes square {
+    to{
+        transform: translate(100vw, 100vh) 
+    }
+}
+
+@keyframes circle {
+    to {
+      transform: translate(100vw, -100vh);
+    }
+  }
+
+@keyframes rect {
+    to {
+      transform: translate(100vw, -50vh);
+    }
+  }
